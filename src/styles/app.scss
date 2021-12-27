@@ -1,0 +1,13 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@import "./hero.scss";
+@import "./body.scss";
+@import "./galery.scss";
+@import "./footer.scss";
+@import "./nav.scss";

@@ -1,0 +1,316 @@
+.footer-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .title {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 3px black solid;
+    h1 {
+      text-align: center;
+      margin: 1rem 0;
+      color: rgb(110, 163, 31);
+    }
+    p {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80vw;
+      h3 {
+        color: rgb(110, 163, 31);
+        margin-bottom: 1rem;
+      }
+      input {
+        height: 2rem;
+        border-radius: 25px;
+        border: 0.5px rgb(110, 163, 31) solid;
+        width: 100%;
+      }
+      button {
+        margin-top: 1rem;
+        height: 2rem;
+        border-radius: 15px;
+        width: 100%;
+        background-color: rgb(110, 163, 31);
+        border: none;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .review-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 80%;
+    h1 {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      color: rgb(25, 221, 221);
+    }
+    h5 {
+      font-weight: lighter;
+      margin-bottom: 1rem;
+    }
+  }
+  .review {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .review1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      img {
+        border-radius: 50%;
+        width: 100px;
+      }
+      p {
+        margin-top: 1rem;
+        text-align: center;
+      }
+    }
+    .review2 {
+      display: none;
+    }
+    .review3 {
+      display: none;
+    }
+  }
+  .copyright {
+    margin-top: 4rem;
+    width: 80%;
+    p {
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .footer-container {
+    .title {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      .review1 {
+        h3 {
+          font-size: 1.7rem;
+        }
+        input {
+          height: 4rem;
+        }
+        button {
+          height: 4rem;
+          border-radius: 25px;
+        }
+      }
+    }
+    .review-title {
+      h1 {
+        font-size: 2.5rem;
+      }
+      h5 {
+        font-size: 1.5rem;
+      }
+    }
+    .review1 {
+      div {
+        p {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .copyright {
+      p {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    .title {
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+      .review1 {
+        h3 {
+          font-size: 1.7rem;
+        }
+        input {
+          height: 4rem;
+        }
+        button {
+          height: 4rem;
+          border-radius: 25px;
+        }
+      }
+    }
+    .review-title {
+      h1 {
+        font-size: 2.5rem;
+      }
+      h5 {
+        font-size: 1.5rem;
+      }
+    }
+    .review {
+      .review1 {
+        p {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .review {
+      .review2 {
+        p {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .review {
+      .review3 {
+        p {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .copyright {
+      p {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .footer-container {
+    .title {
+      background: rgb(67, 64, 115);
+      background: linear-gradient(
+        90deg,
+        rgba(67, 64, 115, 1) 32%,
+        rgba(88, 66, 22, 1) 67%
+      );
+      border-radius: 25px;
+      border: none;
+      margin-top: 2rem;
+      padding-bottom: 1rem;
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.3rem;
+        width: 80%;
+        color: white;
+      }
+      div {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        h3 {
+          font-size: 1rem;
+          margin: 0;
+        }
+        input {
+          width: 20rem;
+          height: 2.5rem;
+        }
+        button {
+          height: 2.5rem;
+          width: 8rem;
+          margin: 0;
+        }
+      }
+    }
+    .review {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      margin-top: 2rem;
+      gap: 5rem;
+      .review1 {
+        img {
+          width: 123px;
+        }
+      }
+      .review2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+          border-radius: 50%;
+        }
+        p {
+          text-align: center;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-container {
+    height: 90vh;
+    .title {
+      div {
+        input {
+          width: 30rem;
+        }
+        button {
+          width: 14rem;
+        }
+      }
+    }
+    .review {
+      .review3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+          border-radius: 50%;
+        }
+        p {
+          text-align: center;
+          margin-top: 1rem;
+        }
+      }
+    }
+    .copyright {
+      padding-bottom: 2rem;
+    }
+  }
+}

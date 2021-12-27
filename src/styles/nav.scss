@@ -1,0 +1,124 @@
+.nav-container {
+  height: 50px;
+  background-color: rgba($color: #000000, $alpha: 1);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  left: 0%;
+  .home {
+    h1 {
+      margin-left: 1.5rem;
+      a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+          cursor: pointer;
+          color: cyan;
+        }
+      }
+    }
+  }
+  .hamburger {
+    i {
+      color: white;
+      margin-right: 1.5rem;
+    }
+  }
+  .nav-item {
+    position: absolute;
+    left: 0;
+    background-color: rgba($color: #292828, $alpha: 1);
+    width: 100vw;
+    top: 100%;
+    padding-top: 0.5rem;
+    display: none;
+    ul {
+      li {
+        list-style: none;
+        text-align: center;
+        font-size: 1.5rem;
+        a {
+          text-decoration: none;
+          color: white;
+          &:hover {
+            background-color: cyan;
+            color: black;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .nav-item.show {
+    display: block;
+    animation: animate 0.5s linear forwards;
+  }
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 600px) {
+  .nav-container {
+    .home {
+      h1 {
+        margin-left: 2rem;
+        font-size: 2rem;
+      }
+    }
+    .hamburger {
+      font-size: 1.5rem;
+      i {
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-container {
+    .home {
+      h1 {
+        margin-left: 2rem;
+        font-size: 2rem;
+      }
+    }
+    .hamburger {
+      display: none;
+      font-size: 1.5rem;
+      i {
+        margin-right: 2rem;
+      }
+    }
+    .nav-item {
+      position: static;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      background-color: black;
+      ul {
+        display: flex;
+        li {
+          margin-right: 2rem;
+          a {
+            &:hover {
+              color: cyan;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
